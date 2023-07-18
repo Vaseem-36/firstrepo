@@ -39,7 +39,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dockerImage = docker.build("srghouse/contactsbootapi:${env.BUILD_NUMBER}")
+                    dockerImage = docker.build("vaseem36/firstrepo:${env.BUILD_NUMBER}")
                 }
             }
         }
